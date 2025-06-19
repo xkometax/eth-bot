@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: eth-price-alert-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    plan: free
